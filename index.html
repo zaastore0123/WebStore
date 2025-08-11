@@ -6,71 +6,32 @@
   <title>TzaaStore</title>
   <link rel="stylesheet" href="style.css">
 </head>
-  <header class="banner">
-  <img src="https://files.catbox.moe/9kv36j.png" alt="Banner TzaaStore">
-  </header>
 <body>
-  <h1>TzaaStore</h1>
-  <div class="category-container">
-    <div class="category" onclick="toggleVarian('panel')">
-      <img src="img/panel.jpg" alt="Panel">
+
+  <!-- Gambar Header -->
+  <header>
+    <img src="img/header.jpg" alt="Header" id="main-header">
+  </header>
+
+  <!-- Kategori -->
+  <section class="categories">
+    <div class="category" data-category="Panel">
       <h2>Panel</h2>
-      <div class="varian" id="panel">
-        <ul>
-          <li>Panel 1</li>
-          <li>Panel 2</li>
-          <li>Panel 3</li>
-          <li>Panel 4</li>
-          <li>Panel 5</li>
-          <li>Panel 6</li>
-          <li>Panel 7</li>
-          <li>Panel 8</li>
-          <li>Panel 9</li>
-          <li>Panel 10</li>
-          <li>Panel 11</li>
-        </ul>
-      </div>
+      <div class="items"></div>
     </div>
-
-    <div class="category" onclick="toggleVarian('scriptbot')">
-      <img src="img/scriptbot.jpg" alt="ScriptBot">
+    <div class="category" data-category="ScriptBot">
       <h2>ScriptBot</h2>
-      <div class="varian" id="scriptbot">
-        <ul>
-          <li>Script 1</li>
-          <li>Script 2</li>
-          <li>Script 3</li>
-          <li>Script 4</li>
-          <li>Script 5</li>
-          <li>Script 6</li>
-        </ul>
-      </div>
+      <div class="items"></div>
     </div>
-
-    <div class="category" onclick="toggleVarian('wabase')">
-      <img src="img/wabase.jpg" alt="Wabase">
+    <div class="category" data-category="Wabase">
       <h2>Wabase</h2>
-      <div class="varian" id="wabase">
-        <ul>
-          <li>Wabase 1</li>
-          <li>Wabase 2</li>
-          <li>Wabase 3</li>
-          <li>Wabase 4</li>
-        </ul>
-      </div>
+      <div class="items"></div>
     </div>
-
-    <div class="category" onclick="toggleVarian('website')">
-      <img src="img/website.jpg" alt="Website">
+    <div class="category" data-category="Website">
       <h2>Website</h2>
-      <div class="varian" id="website">
-        <ul>
-          <li>Website 1</li>
-          <li>Website 2</li>
-        </ul>
-      </div>
+      <div class="items"></div>
     </div>
-  </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
